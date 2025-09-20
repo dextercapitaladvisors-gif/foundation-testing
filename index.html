@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dexter Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- ====================== NAVIGATION ====================== -->
+  <header class="w-full bg-[#FFFBF8]">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Brand -->
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://8upload.com/image/68ce43d075353/df_logo.png" alt="Dexter Foundation" class="h-10 w-auto object-contain">
+      </a>
+
+      <!-- Links -->
+      <ul class="hidden md:flex items-center gap-8 text-sm">
+        <li><a href="#our-story" class="nav-link text-black hover:text-[#E57C3A] transition" data-nav>Our Story</a></li>
+        <li><a href="#team" class="nav-link text-black hover:text-[#E57C3A] transition" data-nav>Team</a></li>
+
+        <!-- Our Programs dropdown -->
+        <li class="relative">
+          <button class="nav-link inline-flex items-center gap-1 text-black hover:text-[#E57C3A] transition" data-nav data-menu-btn="programs">
+            Our Programs
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+          </button>
+          <div data-menu="programs" class="invisible opacity-0 pointer-events-none absolute left-1/2 -translate-x-1/2 mt-3 w-56 bg-white rounded-lg shadow border border-gray-100 transition">
+            <ul class="py-2 text-sm">
+              <li class="relative group">
+                <button class="w-full text-left px-4 py-2 flex items-center justify-between hover:bg-gray-50">
+                  <span class="text-gray-800">Navodaya Coaching</span>
+                  <svg class="h-4 w-4 text-gray-400 group-hover:text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                </button>
+                <div class="absolute top-0 left-full ml-2 w-44 bg-white rounded-lg shadow border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                  <ul class="py-2">
+                    <li><a href="#batch-1-2024" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>Batch 1 - 2024</a></li>
+                    <li><a href="#batch-2-2025" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>Batch 2 - 2025</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#english-training" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>English Training</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Success Stories dropdown -->
+        <li class="relative">
+          <button class="nav-link inline-flex items-center gap-1 text-black hover:text-[#E57C3A] transition" data-nav data-menu-btn="stories">
+            Success Stories
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+          </button>
+          <div data-menu="stories" class="invisible opacity-0 pointer-events-none absolute left-1/2 -translate-x-1/2 mt-3 w-44 bg-white rounded-lg shadow border border-gray-100 transition">
+            <ul class="py-2 text-sm">
+              <li><a href="#batch-1-2024" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>Batch 1 - 2024</a></li>
+              <li><a href="#batch-2-2025" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>Batch 2 - 2025</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Mobile hamburger (placeholder) -->
+      <button class="md:hidden p-2 rounded-lg border border-gray-300" aria-label="Open menu">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ====================== SECTION 1: HERO ====================== -->
+  <section id="section-1" class="bg-[#FFFBF8] py-16 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+      <div class="space-y-6">
+        <h1 class="text-4xl font-bold text-black">Empowering Rural Students<br/>through Education</h1>
+        <p class="text-gray-600 text-lg">Changing Lives through Education</p>
+        <div class="flex gap-4">
+          <a href="#initiatives" class="bg-[#E57C3A] text-white px-6 py-3 rounded-md font-medium hover:bg-[#d96b29] transition">View Initiatives</a>
+          <a href="#get-involved" class="border border-blue-500 text-blue-600 px-6 py-3 rounded-md font-medium hover:bg-blue-50 transition">Get Involved</a>
+        </div>
+      </div>
+      <div class="flex justify-center md:justify-end">
+        <img src="https://8upload.com/image/68ce4430c007c/sec_1.png" alt="Hero students" class="rounded-2xl shadow-md object-cover"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== SECTION 2: OUR VISION ====================== -->
+  <section id="section-2" class="bg-[#FFFBF8] py-16 px-6">
+    <div class="max-w-6xl mx-auto">
+      <div class="rounded-2xl border border-gray-200 bg-white p-8 md:p-12">
+        <div class="grid grid-cols-1 md:grid-cols-[1.6fr_1fr] gap-10 md:gap-12 items-center">
+          <!-- Left copy (centered vertically) -->
+          <div class="flex flex-col justify-center space-y-4 max-w-prose text-left">
+            <p class="text-[#2F6DB2] font-semibold">Our Vision</p>
+            <h2 class="text-4xl font-bold text-gray-800">Empowering Through Education</h2>
+            <p class="text-gray-600 leading-7">
+              Dexter Foundation is the brain child of our Founder, Devendra Agrawal, who was born in a
+              small village of Rajasthan, Hasampur and discovered education as the single most important
+              life-altering parameter in his life. The foundation is committed to enable rural
+              underprivileged kids to discover education opportunities and experience a huge impact
+              resulting from it.
+            </p>
+          </div>
+          <!-- Right stats -->
+          <div class="grid grid-cols-2 gap-6">
+            <div class="rounded-2xl bg-[#E57C3A] text-white p-6 min-h-[160px] md:min-h-[180px] flex items-center justify-center">
+              <div class="text-center text-2xl md:text-3xl font-semibold leading-snug">Our<br/>Journey</div>
+            </div>
+            <div class="rounded-2xl bg-[#F1F7FF] p-6 min-h-[160px] md:min-h-[180px] flex flex-col items-center justify-center text-center gap-2">
+              <img src="https://8upload.com/image/68ce4499150e8/s3_1.png" alt="Students icon" class="h-10 w-10 object-contain"/>
+              <div class="text-3xl font-bold text-[#2F6DB2]">350+</div>
+              <div class="text-sm text-[#2F6DB2]/80">Students Trained</div>
+            </div>
+            <div class="rounded-2xl bg-[#F1F7FF] p-6 min-h-[160px] md:min-h-[180px] flex flex-col items-center justify-center text-center gap-2">
+              <img src="https://8upload.com/image/68ce4499211e9/s3_2.png" alt="Locations icon" class="h-10 w-10 object-contain"/>
+              <div class="text-3xl font-bold text-[#2F6DB2]">9</div>
+              <div class="text-sm text-[#2F6DB2]/80">Locations</div>
+            </div>
+            <div class="rounded-2xl bg-[#F1F7FF] p-6 min-h-[160px] md:min-h-[180px] flex flex-col items-center justify-center text-center gap-2">
+              <img src="https://8upload.com/image/68ce449931370/s3_3.png" alt="Training icon" class="h-10 w-10 object-contain"/>
+              <div class="text-3xl font-bold text-[#2F6DB2]">4k+</div>
+              <div class="text-sm text-[#2F6DB2]/80">Hours of Training</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== SECTION 3: FREE COACHING ====================== -->
+  <section id="section-3" class="bg-[#FFFBF8] py-16 px-6">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold text-[#2F6DB2]">Free Coaching</h2>
+    </div>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Card 1 -->
+      <article class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+        <img src="https://8upload.com/image/68ce44e2f07ac/s4_1.png" alt="Navodaya exam" class="w-full h-48 object-cover"/>
+        <div class="p-6 text-left flex flex-col flex-1">
+          <h3 class="text-lg font-semibold text-[#2F6DB2] mb-4">Navodaya Entrance Exam</h3>
+          <p class="text-gray-600 text-sm leading-6 mb-4">
+            The Dexter Foundation is currently training 100 students in partnership with IN-DEED Foundation from rural Rajasthan in 4 locations:
+            <br><span class="text-[#2F6DB2]">Jodhpur | Kotputli | Hasampur | Sojat</span>
+          </p>
+          <p class="text-gray-600 text-sm leading-6 mb-4">
+            These students are being given free coaching in study centers near them by experienced teachers in Hindi, Math and Mental Ability so that they can clear the entrance exam for Navodaya Vidyalaya.
+          </p>
+          <p class="text-gray-600 text-sm leading-6 mb-6">
+            We have already delivered more than 25,000 hours of classroom training and helped students register successfully. Irrespective of results, students are exposed to a new way of life, which we hope stays with them.
+          </p>
+          <div class="mt-auto">
+            <a href="#" class="block text-center bg-[#F1F7FF] text-[#2F6DB2] font-medium rounded-md py-2 hover:bg-[#e2ecfa] transition">Explore More</a>
+          </div>
+        </div>
+      </article>
+      <!-- Card 2 -->
+      <article class="bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm flex flex-col">
+        <img src="https://8upload.com/image/68ce44e328ffa/s4_2.png" alt="English training" class="w-full h-48 object-cover"/>
+        <div class="p-6 text-left flex flex-col flex-1">
+          <h3 class="text-lg font-semibold text-[#E57C3A] mb-4">English Training for Rural Students</h3>
+          <p class="text-gray-600 text-sm leading-6 mb-4">
+            Dexter Foundation sponsored Online and Offline English classes for 250 rural students from
+            <br><span class="text-[#E57C3A]">Rajasthan | Himachal Pradesh | Karnataka | Odisha | Assam</span>
+          </p>
+          <p class="text-gray-600 text-sm leading-6 mb-4">
+            These students, from weaker sections of society, were taught English from basics to improve spoken and written skills. This was delivered through the NGO EmpBindi International Association.
+          </p>
+          <p class="text-gray-600 text-sm leading-6 mb-6">
+            The program was a success, helping students in academics and giving them confidence.
+          </p>
+          <div class="mt-auto">
+            <a href="#" class="block text-center bg-[#FFF5EF] text-[#E57C3A] font-medium rounded-md py-2 hover:bg-[#fde8db] transition">Explore More</a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ====================== SECTION 4: OUR JOURNEY, OUR PEOPLE ====================== -->
+  <section id="section-4" class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-bold text-blue-700 mb-4">Our Journey, Our People</h2>
+      <p class="text-gray-600 mb-12 text-sm">Stories that inspire and reflect the spirit of Dexter Foundation.</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Manoj -->
+        <article class="bg-white rounded-xl shadow overflow-hidden text-left flex flex-col">
+          <img src="https://8upload.com/image/68ce645dedc9b/01.png" alt="Manoj Story" class="block w-full h-auto"/>
+          <div class="px-4 pb-4 space-y-3">
+            <p class="text-gray-700 text-sm leading-6">
+              My name is Manoj, from Hasampur, a small village with few educational opportunities. My father was a cloth merchant, and though I loved studying, the people around me often discouraged me, saying things like, ‘Kaunsa doctor, engineer ban jaoge?’ For a while, it felt like my dreams were too far away.
+            </p>
+            <p class="text-gray-700 text-sm leading-6">
+              Everything changed when I entered Navodaya. The environment, discipline, and dedicated teachers opened doors I never thought possible. With their support, I prepared for CPMT, earned a good rank, and became an orthopaedic doctor. Today, I run my own hospital in Kotputli, serving my community with pride.
+            </p>
+            <p class="text-gray-700 text-sm leading-6">
+              Navodaya not only transformed my life but also my family’s future. Inspired by my journey, both my younger brothers became engineers. The ripple effect of Navodaya uplifted us all, I will always be grateful.
+            </p>
+          </div>
+        </article>
+
+        <!-- Preeti -->
+        <article class="bg-white rounded-xl shadow overflow-hidden text-left flex flex-col">
+          <img src="https://8upload.com/image/68ce645e18458/02.png" alt="Preeti Story" class="block w-full h-auto"/>
+          <div class="px-4 pb-4 space-y-3">
+            <p class="text-gray-700 text-sm leading-6">
+              As a young girl entering Navodaya in 2003, I was full of dreams but held back by my own shyness and stage fright. Seven years later, in 2010, I walked out with a confidence I never knew I had.
+            </p>
+            <p class="text-gray-700 text-sm leading-6">
+              Navodaya didn’t just give me an education; it transformed me. I learned the power of hard work, discipline, and persistence, turning my stage fear into the confidence to win first prize in public speaking. Today, as a software engineer with a fulfilling career, I am a testament to the life-changing impact of Navodaya's holistic education.
+            </p>
+            <p class="text-gray-700 text-sm leading-6">
+              It taught me invaluable life skills and gave me a second family. Through the Dexter Foundation, we want to help other young, bright students unlock their potential, just as Navodaya helped me unlock mine.
+            </p>
+          </div>
+        </article>
+
+        <!-- Prince -->
+        <article class="bg-white rounded-xl shadow overflow-hidden text-left flex flex-col">
+          <img src="https://8upload.com/image/68ce645e3940f/03.png" alt="Prince Story" class="block w-full h-auto"/>
+          <div class="px-4 pb-4 space-y-3">
+            <p class="text-gray-700 text-sm leading-6">
+              Navodaya has always been more than a school – it was a family. We entered its gates as children with tears in our eyes but left with lifelong bonds and memories.
+            </p>
+            <p class="text-gray-700 text-sm leading-6">
+              The institution gave me opportunities that shaped my outlook — from sports and NCC to experiencing India’s diverse cultures. It taught me to respect different perspectives, embrace teamwork, and develop leadership skills that many gain much later in life.
+            </p>
+            <p class="text-gray-700 text-sm leading-6">
+              The disciplined environment built focus and determination, which helped me crack IIT JEE. The culture of healthy competition, equality, and mutual respect laid a strong foundation for my academic and personal growth.
+            </p>
+            <p class="text-gray-700 text-sm leading-6">
+              Navodaya gave me a second family and a philosophy to live life to the fullest — something I’ll always be grateful for.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== SECTION 5: CENTERED IMAGE ====================== -->
+  <section id="section-5" class="py-16 px-6 bg-[#FFFBF8]">
+    <div class="max-w-6xl mx-auto flex justify-center items-center">
+      <img src="https://8upload.com/image/68ce459ccd044/sec_5.png" alt="Community card" class="max-w-full h-auto"/>
+    </div>
+  </section>
+
+  <!-- ====================== SECTION 6: PARTNERING FOR IMPACT ====================== -->
+  <section id="section-6" class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto text-center mb-12">
+      <h2 class="text-3xl font-bold text-[#2F6DB2]">Partnering for Impact</h2>
+      <p class="text-gray-600 mt-4 text-base max-w-3xl mx-auto">
+        This initiative reflects our belief that access to <span class="font-semibold">quality education can transform lives</span> and that every child deserves the chance to dream big.
+      </p>
+    </div>
+
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <!-- Left image -->
+      <div class="flex justify-center">
+        <img src="https://8upload.com/image/68ce671c03c80/sec_6.png" alt="Partnering for Impact" class="max-w-full h-auto"/>
+      </div>
+
+      <!-- Right content (centered vertically) -->
+      <div class="text-left space-y-8 flex flex-col justify-center h-full">
+        <p class="text-gray-700 text-sm leading-6">
+          In 2024–25, the <span class="font-semibold">Dexter Foundation</span> collaborated with <span class="font-semibold">IN-DEED Foundation</span> (program lead) and <span class="font-semibold">Multibhashi</span> (education partner) to launch a dedicated training initiative for rural students preparing for the <span class="font-semibold">Navodaya Vidyalaya Entrance Exam</span>.
+        </p>
+
+        <div class="flex items-start gap-4 pb-4 border-b border-gray-200">
+          <img src="https://8upload.com/image/68ce679ae04db/Group_3531.png" alt="Icon 1" class="w-8 h-8 object-contain shrink-0"/>
+          <p class="text-gray-700 text-sm leading-6">108 students from 4 districts of Rajasthan enrolled in the program.</p>
+        </div>
+
+        <div class="flex items-start gap-4 pb-4 border-b border-gray-200">
+          <img src="https://8upload.com/image/68ce4631bef5f/Group_3532.png" alt="Icon 2" class="w-8 h-8 object-contain shrink-0"/>
+          <p class="text-gray-700 text-sm leading-6">They received 250+ hours of structured training, including topic-based classes, mock tests, and OMR-based revision exams.</p>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <img src="https://8upload.com/image/68ce4631a5f14/Group_3530.png" alt="Icon 3" class="w-8 h-8 object-contain shrink-0"/>
+          <p class="text-gray-700 text-sm leading-6">Parent–Teacher meetings were conducted throughout to keep families engaged and motivated.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================== FOOTER (unchanged) ====================== -->
+  <footer class="bg-white border-t border-gray-200 py-10 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 text-gray-700">
+      <div><img src="https://8upload.com/image/68ce43d075353/df_logo.png" alt="Dexter Foundation Logo" class="h-12 w-auto"/></div>
+      <div>
+        <h4 class="font-semibold mb-3">Contact Us</h4>
+        <p class="text-sm leading-6">91 Springboard 512/10,<br/>Outer Ring Road,<br/>Mahadevpura, Bangalore</p>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Overview</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-blue-600">Our Story</a></li>
+          <li><a href="#" class="hover:text-blue-600">Team</a></li>
+          <li><a href="#" class="hover:text-blue-600">Our Programs</a></li>
+          <li><a href="#" class="hover:text-blue-600">Success Stories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-semibold mb-3">Other Delta Entities</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a href="#" class="hover:text-blue-600">Dexter Capital Advisors</a></li>
+          <li><a href="#" class="hover:text-blue-600">Dexter Ventures</a></li>
+          <li><a href="#" class="hover:text-blue-600">Discover Ventures</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-gray-200 text-center text-xs text-gray-500">
+      <p>© 2025 Dexter Foundation. All Rights Reserved.</p>
+      <p class="mt-2"><span class="font-semibold">Disclaimer -</span> Dexter Foundation does not accept donations; we are not responsible for unauthorized payment claims.</p>
+    </div>
+  </footer>
+
+  <!-- ====================== NAV JS (dropdowns + active color) ====================== -->
+  <script>
+    // Dropdown toggles
+    document.querySelectorAll('[data-menu-btn]').forEach(btn => {
+      btn.addEventListener('click', e => {
+        const id = btn.getAttribute('data-menu-btn');
+        const menu = document.querySelector(`[data-menu="${id}"]`);
+        const isOpen = menu.classList.contains('!visible');
+        document.querySelectorAll('[data-menu]').forEach(m => {
+          m.classList.remove('!visible','!opacity-100','!pointer-events-auto');
+          m.classList.add('invisible','opacity-0','pointer-events-none');
+        });
+        if (!isOpen) {
+          menu.classList.remove('invisible','opacity-0','pointer-events-none');
+          menu.classList.add('!visible','!opacity-100','!pointer-events-auto');
+        }
+        e.stopPropagation();
+      });
+    });
+    // Close menus on click-out / ESC
+    document.addEventListener('click', () => {
+      document.querySelectorAll('[data-menu]').forEach(m => {
+        m.classList.remove('!visible','!opacity-100','!pointer-events-auto');
+        m.classList.add('invisible','opacity-0','pointer-events-none');
+      });
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('[data-menu]').forEach(m => {
+          m.classList.remove('!visible','!opacity-100','!pointer-events-auto');
+          m.classList.add('invisible','opacity-0','pointer-events-none');
+        });
+      }
+    });
+
+    // Active color handling (any nav item): #E57C3A
+    const ACTIVE = 'text-[#E57C3A]';
+    const INACTIVE = 'text-black';
+    function setActive(el) {
+      document.querySelectorAll('.nav-link').forEach(a => {
+        a.classList.remove(ACTIVE, 'font-semibold');
+        if (!a.closest('[data-menu]')) a.classList.add(INACTIVE);
+      });
+      el.classList.remove(INACTIVE);
+      el.classList.add(ACTIVE, 'font-semibold');
+    }
+    document.querySelectorAll('.nav-link[data-nav]').forEach(link => {
+      link.addEventListener('click', () => setActive(link));
+    });
+  </script>
+</body>
+</html>
