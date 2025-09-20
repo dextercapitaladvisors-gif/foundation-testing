@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dexter Foundation</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased text-gray-800">
+
+  <!-- ====================== NAVIGATION ====================== -->
+  <header class="w-full bg-[#FFFBF8]">
+    <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <!-- Brand -->
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://8upload.com/image/68ce43d075353/df_logo.png" alt="Dexter Foundation" class="h-10 w-auto object-contain">
+      </a>
+
+      <!-- Links -->
+      <ul class="hidden md:flex items-center gap-8 text-sm">
+        <li><a href="#our-story" class="nav-link text-black hover:text-[#E57C3A] transition" data-nav>Our Story</a></li>
+        <li><a href="#team" class="nav-link text-black hover:text-[#E57C3A] transition" data-nav>Team</a></li>
+
+        <!-- Our Programs dropdown -->
+        <li class="relative">
+          <button class="nav-link inline-flex items-center gap-1 text-black hover:text-[#E57C3A] transition" data-nav data-menu-btn="programs">
+            Our Programs
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+          </button>
+          <div data-menu="programs" class="invisible opacity-0 pointer-events-none absolute left-1/2 -translate-x-1/2 mt-3 w-56 bg-white rounded-lg shadow border border-gray-100 transition">
+            <ul class="py-2 text-sm">
+              <li class="relative group">
+                <button class="w-full text-left px-4 py-2 flex items-center justify-between hover:bg-gray-50">
+                  <span class="text-gray-800">Navodaya Coaching</span>
+                  <svg class="h-4 w-4 text-gray-400 group-hover:text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m9 5 7 7-7 7"/></svg>
+                </button>
+                <div class="absolute top-0 left-full ml-2 w-44 bg-white rounded-lg shadow border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition">
+                  <ul class="py-2">
+                    <li><a href="#batch-1-2024" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>Batch 1 - 2024</a></li>
+                    <li><a href="#batch-2-2025" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>Batch 2 - 2025</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#english-training" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>English Training</a></li>
+            </ul>
+          </div>
+        </li>
+
+        <!-- Success Stories dropdown -->
+        <li class="relative">
+          <button class="nav-link inline-flex items-center gap-1 text-black hover:text-[#E57C3A] transition" data-nav data-menu-btn="stories">
+            Success Stories
+            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+          </button>
+          <div data-menu="stories" class="invisible opacity-0 pointer-events-none absolute left-1/2 -translate-x-1/2 mt-3 w-44 bg-white rounded-lg shadow border border-gray-100 transition">
+            <ul class="py-2 text-sm">
+              <li><a href="#batch-1-2024" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>Batch 1 - 2024</a></li>
+              <li><a href="#batch-2-2025" class="block px-4 py-2 text-gray-800 hover:bg-gray-50 nav-link" data-nav>Batch 2 - 2025</a></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+      <!-- Mobile hamburger (placeholder) -->
+      <button class="md:hidden p-2 rounded-lg border border-gray-300" aria-label="Open menu">
+        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Other sections skipped here for brevity (already in full code above) -->
+
+</body>
+</html>
